@@ -1,0 +1,13 @@
+<!-- templates/dashboard.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center">
+    <h2 class="text-2xl font-bold mb-4">Real-Time Dashboard</h2>
+    <p>Truck Make: {{ data.truck.make }}</p>
+    <p>Model: {{ data.truck.model }}</p>
+    <p>Speed: {{ data.truck.speed }} km/h</p>
+    <p>Fuel Level: {{ data.truck.fuel }} / {{ data.truck.fuelCapacity }}</p>
+    <!-- Add more data as needed -->
+</div>
+{% endblock %}
